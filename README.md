@@ -88,7 +88,7 @@ sniff(filter="icmp", prn=afficher_paquet, count=10)
 - **`filter="icmp"`** applies a BPF filter so only ICMP (ping) traffic is captured — reducing noise and improving performance.
 - **`Raw`** layer, when present, contains the unparsed payload — readable in plaintext protocols, unreadable (encrypted) in HTTPS.
 
-## 📸 Example output
+## Example output
 
 ```
 [ICMP] 192.168.100.20 -> 192.168.100.1 | Payload: b'\xe9Nj\x00\x00\x00...'

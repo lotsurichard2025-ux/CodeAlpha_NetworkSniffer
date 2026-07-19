@@ -2,7 +2,7 @@
 
 A basic network packet sniffer built in Python using **Scapy**, developed as part of the CodeAlpha Cybersecurity Internship (Task 1).
 
-## 📌 Overview
+## Overview
 
 This tool captures live network traffic and displays, for each packet:
 - Source and destination IP addresses
@@ -12,7 +12,7 @@ This tool captures live network traffic and displays, for each packet:
 
 It also supports BPF filters (e.g. `icmp`, `tcp port 80`) to capture only relevant traffic instead of all network noise.
 
-## 🎯 Learning objectives
+## Learning objectives
 
 - Understand how data flows across a network as discrete packets
 - Learn the structure of common protocols (Ethernet → IP → TCP/UDP/ICMP)
@@ -27,13 +27,13 @@ It also supports BPF filters (e.g. `icmp`, `tcp port 80`) to capture only releva
 - **Linux**: no extra driver needed (uses native raw sockets)
 - Administrator / root privileges (required to capture raw packets)
 
-## 📦 Installation
+##  Installation
 
 ```bash
 pip install scapy
 ```
 
-## ▶️ Usage
+## Usage
 
 Run with elevated privileges:
 
@@ -52,7 +52,7 @@ While the script is running, generate traffic in another terminal, e.g.:
 ping google.com
 ```
 
-## 🧠 Code walkthrough
+## Code walkthrough
 
 ```python
 from scapy.all import sniff, IP, TCP, UDP, Raw
@@ -95,10 +95,10 @@ sniff(filter="icmp", prn=afficher_paquet, count=10)
 [ICMP] 192.168.100.1 -> 192.168.100.20 | Payload: b'\xe9Nj\x00\x00\x00...'
 ```
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 This tool is intended strictly for **educational purposes**, to be used only on networks and machines you own or have explicit authorization to monitor. Unauthorized packet interception may violate local laws and regulations.
 
-## 👤 Author
+##  Author
 
 CodeAlpha Cybersecurity Internship — Task 1: Basic Network Sniffer

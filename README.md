@@ -19,7 +19,7 @@ It also supports BPF filters (e.g. `icmp`, `tcp port 80`) to capture only releva
 - Practice reading and interpreting captured packets
 - Understand why unencrypted traffic exposes readable payloads, while encrypted traffic (HTTPS) does not
 
-## 🛠 Requirements
+## Requirements
 
 - Python 3.x
 - [Scapy](https://scapy.net/)
